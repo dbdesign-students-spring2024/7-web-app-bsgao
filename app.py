@@ -189,4 +189,4 @@ def handle_error(e):
 # run the app
 if __name__ == "__main__":
     # logging.basicConfig(filename="./flask_error.log", level=logging.DEBUG)
-    app.run(load_dotenv=True)
+    app.run(load_dotenv=True,debug=True)
