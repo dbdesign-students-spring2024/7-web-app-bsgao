@@ -45,7 +45,7 @@ except ConnectionFailure as e:
     # catch any database errors
     # the ping command failed, so the connection is not available.
     print(" * MongoDB connection error:", e)  # debug
-    sentry_sdk.capture_exception(e)  # send the error to sentry.io. delete if not using
+     # send the error to sentry.io. delete if not using
     sys.exit(1)  # this is a catastrophic error, so no reason to continue to live
 
 
