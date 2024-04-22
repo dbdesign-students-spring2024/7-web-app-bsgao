@@ -1,18 +1,17 @@
-{% extends 'base.html' %} {% block container %}
-<h2>Update</h2>
-<p>Edit a record in the MongoDB database collection.</p>
-<form method="POST" action="{{ url_for('edit_post', mongoid=mongoid) }}">
-  <p>
-    Your name:
-    <input type="text" id="fname" name="fname" value="{{doc.name}}" /><br />
-  </p>
-  <p>
-    Message:
-    <textarea id="fmessage" name="fmessage">{{doc.message}}</textarea>
-  </p>
-  <p>
-    <a href="{{ url_for('read')}}">Cancel</a>
-    <input type="submit" name="post-btn" value="Save" />
-  </p>
-</form>
-{% endblock %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit {{ post.title }}</title>
+</head>
+<body>
+    <h1>Edit Post</h1>
+    <form method="post">
+        Title: <input type="text" name="title" value="{{ post.title }}"><br>
+        Content: <textarea name="content">{{ post.content }}</textarea><br>
+        <input type="submit" value="Save Changes">
+    </form>
+    <hr>
+    <a href="{{ url_for('post', post_id=post._id) }}">Cancel and Go Back to Post</a> |
+    <a href="{{ url_for('home') }}">Back to Home</a>
+</body>
+</html>

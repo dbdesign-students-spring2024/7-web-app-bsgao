@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ post.title }}</title>
+</head>
+<body>
+    <h1>{{ post.title }}</h1>
+    <p>{{ post.content }}</p>
+    <p>Posted on: {{ post.created_at }}</p>
+    <a href="{{ url_for('edit', post_id=post._id) }}">Edit Post</a> |
+    <a href="{{ url_for('delete', post_id=post._id) }}" onclick="return confirm('Are you sure?');">Delete Post</a>
+    <hr>
+    <a href="{{ url_for('home') }}">Back to All Posts</a>
+</body>
+</html>
