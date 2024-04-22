@@ -29,10 +29,8 @@ I have tried for a few hours to deploy my application onto our i6.cims.nyu.edu s
 ## Proof of work
 Home Page:
 <img src="/Users/brandongao/flask-app/images/Screen Shot 2024-04-21 at 8.35.31 PM.png"
-     alt="Markdown Monster icon"
-     style="float: left; margin-right: 10px;" />
+    />
 
 Create Post page:
 <img src="/Users/brandongao/flask-app/images/Screen Shot 2024-04-21 at 8.37.53 PM.png"
-     alt="Markdown Monster icon"
-     style="float: left; margin-right: 10px;" />
+     />
