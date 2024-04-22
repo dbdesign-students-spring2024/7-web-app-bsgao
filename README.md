@@ -27,10 +27,9 @@ The application features a main page where users can either remain idle or choos
 I have tried for a few hours to deploy my application onto our i6.cims.nyu.edu server, but I was unable to upload it at the end despite going through a lot of Stackoverflow posts and tried their methods.
 
 ## Proof of work
-Home Page:
-<img src="/Users/brandongao/flask-app/images/Screen Shot 2024-04-21 at 8.35.31 PM.png"
-    />
+![Home Page Image](images/Screen%20Shot%202024-04-21%20at%208.35.31%20PM.png)
+
 
 Create Post page:
-<img src="/Users/brandongao/flask-app/images/Screen Shot 2024-04-21 at 8.37.53 PM.png"
-     />
+![Create Post Image](images/Screen%20Shot%202024-04-21%20at%208.37.53%20PM.png)
+
