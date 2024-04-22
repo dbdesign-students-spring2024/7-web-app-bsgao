@@ -1,16 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>Blog Home</title>
 </head>
 <body>
     <h1>Blog Posts</h1>
-    <a href="{{ url_for('create') }}">Create Post</a>
+    <a href="{{ url_for('create') }}">Create New Post</a>
     {% for post in posts %}
         <div>
-            <h2><a href="{{ url_for('post', post_id=post._id) }}">{{ post.title }}</a></h2>
-            <p>{{ post.content[:150] }}...</p>
+            <h3><a href="{{ url_for('post', post_id=post._id) }}">{{ post.title }}</a></h3>
+            <p>{{ post.content }}</p>
+            <small>Posted on: {{ post.created_at }}</small>
         </div>
+    {% else %}
+        <p>No posts available.</p>
     {% endfor %}
 </body>
 </html>

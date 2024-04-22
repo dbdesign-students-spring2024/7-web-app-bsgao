@@ -27,10 +27,11 @@ except errors.ConnectionFailure as e:
     print(" * MongoDB connection error:", e)
     sys.exit(1)
 
-@app.route("/")
+@app.route('/')
 def home():
     posts = db.posts.find().sort("created_at", -1)
-    return render_template("home.html", posts=posts)
+    posts = list(posts)
+    return render_template('base.html', posts=posts)
 
 @app.route("/post/<post_id>")
 def post(post_id):
@@ -47,9 +48,11 @@ def create():
             "content": content,
             "created_at": datetime.datetime.utcnow()
         }
-        db.posts.insert_one(post)
+        result = db.posts.insert_one(post)
+        print("Inserted post with ID:", result.inserted_id)
         return redirect(url_for("home"))
     return render_template("create.html")
+
 
 @app.route("/edit/<post_id>", methods=['GET', 'POST'])
 def edit(post_id):
