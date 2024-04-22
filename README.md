@@ -33,3 +33,9 @@ I have tried for a few hours to deploy my application onto our i6.cims.nyu.edu s
 ### Create Post page:
 ![Create Post Image](images/Screen%20Shot%202024-04-21%20at%208.37.53%20PM.png)
 
+## Website url
+
+```
+ http://127.0.0.1:5000/
+
+```
