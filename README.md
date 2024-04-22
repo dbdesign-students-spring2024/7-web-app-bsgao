@@ -27,9 +27,9 @@ The application features a main page where users can either remain idle or choos
 I have tried for a few hours to deploy my application onto our i6.cims.nyu.edu server, but I was unable to upload it at the end despite going through a lot of Stackoverflow posts and tried their methods.
 
 ## Proof of work
+### Main Page
 ![Home Page Image](images/Screen%20Shot%202024-04-21%20at%208.35.31%20PM.png)
 
-
-Create Post page:
+### Create Post page:
 ![Create Post Image](images/Screen%20Shot%202024-04-21%20at%208.37.53%20PM.png)
 
